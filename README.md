@@ -111,36 +111,18 @@ Onde:
 ---
 
 ## 7. Gráfico de Tempo de Execução
-
-> Gráfico disponível no arquivo Excel `resultados_atividade2.xlsx`.
-
-- **Eixo X:** Número de threads/processos (Serial, 2, 4, 8, 12)
-- **Eixo Y:** Tempo de execução em segundos
-
-**Observação:** O tempo da versão serial (0.057s) é significativamente menor do que todas as versões paralelas, evidenciando o alto custo de overhead da criação de processos para este volume de dados.
+<img width="1185" height="734" alt="grafico_tempo" src="https://github.com/user-attachments/assets/6a7721a8-3c6f-46a4-8bbb-88b50ad68765" />
 
 ---
 
 ## 8. Gráfico de Speedup
 
-> Gráfico disponível no arquivo Excel `resultados_atividade2.xlsx`.
-
-- **Eixo X:** Número de threads/processos
-- **Eixo Y:** Speedup obtido
-- A linha de **speedup ideal** seria linear (2, 4, 8, 12), muito acima dos valores reais obtidos.
-
-**Observação:** O speedup real ficou muito abaixo do ideal em todos os casos, não ultrapassando 0.09, ou seja, o paralelo foi mais lento que o serial.
+<img width="1185" height="734" alt="grafico_speedup" src="https://github.com/user-attachments/assets/9a2fa3b2-d5a6-46cb-8fd8-f3119dd39b73" />
 
 ---
 
 ## 9. Gráfico de Eficiência
-
-> Gráfico disponível no arquivo Excel `resultados_atividade2.xlsx`.
-
-- **Eixo X:** Número de threads/processos
-- **Eixo Y:** Eficiência (entre 0 e 1)
-
-**Observação:** A eficiência caiu drasticamente já com 2 processos (3.39%), indicando que o overhead de paralelização domina completamente o tempo de execução.
+<img width="1184" height="734" alt="grafico_eficiencia" src="https://github.com/user-attachments/assets/e1e7f08c-f572-42d2-80bc-5fb295b44df3" />
 
 ---
 
