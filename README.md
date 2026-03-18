@@ -113,17 +113,20 @@ Onde:
 ## 7. Gráfico de Tempo de Execução
 <img width="1185" height="734" alt="grafico_tempo" src="https://github.com/user-attachments/assets/6a7721a8-3c6f-46a4-8bbb-88b50ad68765" />
 
+Descrição: O gráfico apresenta o tempo de execução (eixo Y, em segundos) em função do número de processos utilizados (eixo X). A versão serial executa em apenas 0.057s, enquanto todas as versões paralelas apresentam tempos entre 0.63s e 0.84s. Isso evidencia que o overhead de criação de processos e comunicação domina o tempo total, tornando a versão paralela significativamente mais lenta para este problema.
 ---
 
 ## 8. Gráfico de Speedup
 
 <img width="1185" height="734" alt="grafico_speedup" src="https://github.com/user-attachments/assets/9a2fa3b2-d5a6-46cb-8fd8-f3119dd39b73" />
 
+Descrição: O gráfico compara o speedup real obtido (linha azul, eixo Y) com o speedup ideal teórico (linha verde tracejada) em função do número de processos (eixo X). O speedup ideal seria linear — 2, 4, 8 e 12 para cada configuração respectivamente. O speedup real ficou abaixo de 0.10 em todos os casos, demonstrando que a paralelização não trouxe ganho e que o custo de comunicação entre processos superou qualquer benefício do processamento distribuído.
 ---
 
 ## 9. Gráfico de Eficiência
 <img width="1184" height="734" alt="grafico_eficiencia" src="https://github.com/user-attachments/assets/e1e7f08c-f572-42d2-80bc-5fb295b44df3" />
 
+Descrição: O gráfico mostra a eficiência da paralelização (eixo Y, em %) em função do número de processos (eixo X). A linha verde tracejada representa a eficiência ideal de 100%. A eficiência despencou de 100% (serial) para apenas 3.39% com 2 processos, continuando a cair até 0.68% com 12 processos. Isso indica que a maior parte do tempo paralelo é desperdiçada com overhead, e não com processamento útil.
 ---
 
 ## 10. Análise dos Resultados
